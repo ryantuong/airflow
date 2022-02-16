@@ -31,7 +31,7 @@ with DAG(
     start_date=datetime(2021, 1, 1),
     catchup=False,
     dagrun_timeout=timedelta(minutes=60),
-    tags=['demo', 'data_team'],
+    tags=['demo', 'datateam'],
     params={"example_key": "example_value"},
 ) as dag:
     run_this_last = DummyOperator(
