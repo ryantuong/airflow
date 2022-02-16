@@ -26,12 +26,12 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.dummy import DummyOperator
 
 with DAG(
-    dag_id='example_bash_operator',
+    dag_id=' ',
     schedule_interval='0 0 * * *',
     start_date=datetime(2021, 1, 1),
     catchup=False,
     dagrun_timeout=timedelta(minutes=60),
-    tags=['example', 'example2'],
+    tags=['demo', 'data_team'],
     params={"example_key": "example_value"},
 ) as dag:
     run_this_last = DummyOperator(
